@@ -32,14 +32,13 @@ let entrada = Number(prompt("Seleccione la opción deseada: 1) Realizar suma 2) 
     alert("Salio correctamente del sistema.");
 
 
-  function suma(num1, num2){
+function suma(num1, num2){
     numero1 = Number(num1);
     numero2 = Number(num2);
     resultado = num1 + num2;
     return(resultado)
-  }
-
-  num1 = prompt("ingrese numero 1");
-  num2 = prompt("ingrese numero 2");
-  suma(num1, num2);
+}
+num1 = prompt("ingrese numero 1");
+num2 = prompt("ingrese numero 2");
+suma(num1, num2);
 
