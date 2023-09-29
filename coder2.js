@@ -16,7 +16,11 @@ let entrada = Number(prompt("Seleccione la opción deseada: 1) Realizar suma 2) 
             alert("El resultado de la multiplicacion es: " + (num1 * num2));
             break;
             case 4:
-            alert("El resultado de la division es: " + (num1 / num2));
+            if (num2 === 0){
+
+            }else{
+                alert("El resultado de la division es: " + (num1 / num2));
+            }
             break;
             default:
             alert("Opción no válida.");
@@ -26,3 +30,16 @@ let entrada = Number(prompt("Seleccione la opción deseada: 1) Realizar suma 2) 
     
     
     alert("Salio correctamente del sistema.");
+
+
+  function suma(num1, num2){
+    numero1 = Number(num1);
+    numero2 = Number(num2);
+    resultado = num1 + num2;
+    return(resultado)
+  }
+
+  num1 = prompt("ingrese numero 1");
+  num2 = prompt("ingrese numero 2");
+  suma(num1, num2);
+
