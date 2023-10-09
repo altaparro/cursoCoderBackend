@@ -1,45 +1,30 @@
-// actividad numero 1:
+//actividad 1
 
-let entrada = Number(prompt("Seleccione la opción deseada: 1) Realizar suma 2) Realizar resta 3) Realizar multiplicación 4) Realizar división 5) Salir"));
+function calcular() {
 
-    while (entrada != 5 && entrada > 0 && entrada <= 5) {
-        num1 = Number(prompt("ingrese el primer numero"));
-        num2 = Number(prompt("ingrese el segundo numero"));
-        switch (entrada) {
-            case 1:
-            alert("El resultado de la suma es: " + (num1 + num2));
-            break;
-            case 2:
-            alert("El resultado de la resta es: " + (num1 - num2));
-            break;
-            case 3:
-            alert("El resultado de la multiplicacion es: " + (num1 * num2));
-            break;
-            case 4:
-            if (num2 === 0){
+    // Obtener los valores de los campos de entrada
+    
+    var numero1 = parseFloat(document.getElementById('numero1').value);
+    var numero2 = parseFloat(document.getElementById('numero2').value);
+    var operador = document.getElementById('operador').value;
+    var resultado = 0;
 
-            }else{
-                alert("El resultado de la division es: " + (num1 / num2));
-            }
-            break;
-            default:
-            alert("Opción no válida.");
+    // Realizar el cálculo según el operador seleccionado
+    if (operador === 'suma') {
+        resultado = numero1 + numero2;
+    } else if (operador === 'resta') {
+        resultado = numero1 - numero2;
+    } else if (operador === 'multiplicacion') {
+        resultado = numero1 * numero2;
+    } else if (operador === 'division') {
+        if (numero2 !== 0) {
+            resultado = numero1 / numero2;
+        } else {
+            alert("No se puede dividir por cero.");
+            return;
         }
-        entrada = prompt("Seleccione la opción deseada: 1) Realizar suma 2) Realizar resta 3) Realizar multiplicación 4) Realizar división 5) Salir");
     }
-    
-    
-    alert("Salio correctamente del sistema.");
 
-// funciones (no es parte de la act 1,)
-
-function suma(num1, num2){
-    numero1 = Number(num1);
-    numero2 = Number(num2);
-    resultado = num1 + num2;
-    return(resultado)
+    // Mostrar el resultado en la página
+    document.getElementById('resultado').textContent = resultado;
 }
-num1 = prompt("ingrese numero 1");
-num2 = prompt("ingrese numero 2");
-suma(num1, num2);
-
