@@ -31,7 +31,7 @@ let entrada = Number(prompt("Seleccione la opción deseada: 1) Realizar suma 2) 
     
     alert("Salio correctamente del sistema.");
 
-// funciones (no es parte de la act 1)
+// funciones (no es parte de la act 1,)
 
 function suma(num1, num2){
     numero1 = Number(num1);
