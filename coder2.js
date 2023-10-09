@@ -1,4 +1,4 @@
-// prueba de extensiones
+// actividad numero 1:
 
 let entrada = Number(prompt("Seleccione la opción deseada: 1) Realizar suma 2) Realizar resta 3) Realizar multiplicación 4) Realizar división 5) Salir"));
 
@@ -31,6 +31,7 @@ let entrada = Number(prompt("Seleccione la opción deseada: 1) Realizar suma 2) 
     
     alert("Salio correctamente del sistema.");
 
+// funciones (no es parte de la act 1)
 
 function suma(num1, num2){
     numero1 = Number(num1);
