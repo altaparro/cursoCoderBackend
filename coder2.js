@@ -1,8 +1,8 @@
 function calcular() {
-    var numero1 = parseFloat(document.getElementById('numero1').value);
-    var numero2 = parseFloat(document.getElementById('numero2').value);
-    var operador = document.getElementById('operador').value;
-    var resultado = 0;
+    let numero1 = parseFloat(document.getElementById('numero1').value);
+    let numero2 = parseFloat(document.getElementById('numero2').value);
+    let operador = document.getElementById('operador').value;
+    let resultado = 0;
 
     if (operador === 'suma') {
         resultado = numero1 + numero2;
