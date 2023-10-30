@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calculadora Simple</title>
+    <title>Productos</title>
 </head>
 <body>
-    <h1>Calculadora Simple</h1>
+    <h1>Listado de productos</h1>
     
     <form>
-        <input type="text" id="numero1" placeholder="Número 1">
-        <input type="text" id="numero2" placeholder="Número 2">
-        <select id="operador">
-            <option value="suma">Sumar (+)</option>
-            <option value="resta">Restar (-)</option>
-            <option value="multiplicacion">Multiplicar (*)</option>
-            <option value="division">Dividir (/)</option>
-        </select>
-        <button type="button" onclick="calcular()">Calcular</button>
+        <input type="text" id="id" placeholder="id">
+        <input type="text" id="nombre" placeholder="nombre">
+        <input type="text" id="precio" placeholder="precio">
+        <input type="text" id="cantidad" placeholder="cantidad">       
+        <button type="button" onclick="agregar()";>Agregar</button>
+        <button type="button" onclick="listarProductos()";>Listado</button>
+        <button type="button" onclick="productosEnStock()";>En Stock</button>
     </form>
 
-    <p>Resultado: <span id="resultado">-</span></p>
+  
 
-    <script src="coder2.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
