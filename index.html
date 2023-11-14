@@ -2,21 +2,22 @@
 <html>
 <head>
     <title>Productos</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <h1>Listado de productos</h1>
     
     <form>
-        <input type="text" id="id" placeholder="id">
-        <input type="text" id="nombre" placeholder="nombre">
-        <input type="text" id="precio" placeholder="precio">
-        <input type="text" id="cantidad" placeholder="cantidad">       
-        <button type="button" onclick="agregar()";>Agregar</button>
-        <button type="button" onclick="listarProductos()";>Listado</button>
-        <button type="button" onclick="productosEnStock()";>En Stock</button>
+        <input type="text" id="id" placeholder="id"><br><br>
+        <input type="text" id="nombre" placeholder="nombre"><br><br>
+        <input type="text" id="precio" placeholder="precio"><br><br>
+        <input type="text" id="cantidad" placeholder="cantidad"><br><br>   
+        <button type="button" onclick="agregar()">Agregar</button>
+        <button type="button" onclick="listarProductos()">Listado</button>
+        <button type="button" onclick="productosEnStock()">En Stock</button>
     </form>
 
-  
+    <div id="productos-container"></div>
 
     <script src="main.js"></script>
 </body>
