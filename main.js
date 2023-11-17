@@ -111,9 +111,9 @@ function mostrarProductosEnFront() {
         productoDiv.classList.add("producto");
 
         productoDiv.innerHTML = `
-            <p>ID: ${producto.id}</p>
+            <h2>ID: ${producto.id}</h2>
             <p>Nombre: ${producto.nombre}</p>
-            <p>Precio: ${producto.precio}</p>
+            <p>Precio: $ ${producto.precio}</p>
             <p>Cantidad: ${producto.cantidad}</p>
             <button onclick="agregarAlCarrito('${producto.id}')">Agregar al Carrito</button>
         `;
@@ -151,4 +151,23 @@ function obtenerCarritoDesdeLocalStorage() {
 
 function generarCarritoId() {
     return Math.random().toString(36).substr(2, 9);
+}
+
+
+function imprimirCarrito() {
+    const carrito = obtenerCarritoDesdeLocalStorage();
+
+    if (carrito.length === 0) {
+        console.log("El carrito está vacío");
+    } else {
+        console.log("Contenido del carrito:");
+        carrito.forEach(function (item) {
+            console.log("ID: " + item.id);
+            console.log("Nombre: " + item.nombre);
+            console.log("Precio: " + item.precio);
+            console.log("Cantidad en el carrito: " + item.cantidad);
+            console.log("ID del carrito: " + item.carritoId);
+            console.log("-------------");
+        });
+    }
 }
